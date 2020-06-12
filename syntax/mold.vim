@@ -2,7 +2,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword moldKeyword dir help if import recipe as require run var version
+syn keyword moldKeyword dir help if elif else import recipe as require run var version
 syn match moldKeyword "\v\$"
 
 syn match moldSymbol "\v\("
@@ -10,6 +10,7 @@ syn match moldSymbol "\v\)"
 syn match moldSymbol "\v\{"
 syn match moldSymbol "\v\}"
 syn match moldSymbol "\v\="
+syn match moldSymbol "\v\:\="
 
 syn match moldOperator "\v\+"
 syn match moldOperator "\v\|"
